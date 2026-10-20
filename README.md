@@ -5,11 +5,11 @@ This repository uses the BoltzGen universal binder design repository to generate
 This is mainly an exercise in protein design on an interesting target and due to this nature, not focused on being novel research. In case of any mistakes in this repository, please reach out.
 
 # Background
-T-cells recognize antigens presenting different peptides on major histocompatibility complexes (MHCs).[2] The peptide NY-ESO-1 that is presented by MHCs has been linked to cancer.[3] Attempts to recognize this peptide presenting MHC (pMHC) has been a goal for computational biology and has been attempted using RFDiffusion.[4] This repo shows work attempting to generate binder designs for NY-ESO-1 presenting human MHCs (HLA I) using the BoltzGen universal binder design library.[1] The generated protein designs are then to be checked for binding to the target, compared to previous results by the RFDiffusion paper [4] and discussed. 
+T cells recognize antigens presenting different peptides on major histocompatibility complexes (MHCs).[2] The peptide NY-ESO-1 that is presented by MHCs has been linked to cancer.[3] Attempts to recognize this peptide presenting MHC (pMHC) has been a goal for computational biology and has been attempted using RFDiffusion.[4] This repo shows work attempting to generate binder designs for NY-ESO-1 presenting human MHCs (HLA I) using the BoltzGen universal binder design library.[1] The generated protein designs are then to be checked for binding to the target, compared to previous results by the RFDiffusion paper [4] and discussed. 
 
 
 # Setup
-The target for the binder was the HLA-peptide complex in "pMHC target.cif".[5] The input for the BoltzGen run is laid out in "TCRm.yaml". It specifies the target to be the heavy alpha chain of the HLA, while excluding the beta-microglobulin, as it that doesn't appear to be involved in binding. [2] Also marked as non-binding is the region 181 - 274, as that appears visually to be the part involved in membrane binding. Because the T-cell needs to be able to bind cancerous cells specifically, differentiating between healthy peptides and cancer peptides presented by the HLA, NY-ESO-1 was included in the binding region. Specifically, the bulge formed by Met<sup>4</sup> and Trp<sup>5</sup> as well as the amino acids Thr<sup>7</sup> and Gln<sup>8</sup> are used as targets, as these have the most exposed residues in the cleft.[4]
+The target for the binder was the HLA-peptide complex in "pMHC target.cif".[5] The input for the BoltzGen run is laid out in "TCRm.yaml". It specifies the target to be the heavy alpha chain of the HLA, while excluding the beta-microglobulin, as it that doesn't appear to be involved in binding. [2] Also marked as non-binding is the region 181 - 274, as that appears visually to be the part involved in membrane binding. Because the T cell needs to be able to bind cancerous cells specifically, differentiating between healthy peptides and cancer peptides presented by the HLA, NY-ESO-1 was included in the binding region. Specifically, the bulge formed by Met<sup>4</sup> and Trp<sup>5</sup> as well as the amino acids Thr<sup>7</sup> and Gln<sup>8</sup> are used as targets, as these have the most exposed residues in the cleft.[4]
 
 The work was done on kaggle notebooks's free NVIDIA T4 GPUs. 
 # Design
@@ -17,7 +17,9 @@ The script for using BoltzGen's binder design on this target is laid out in "bol
 
 # Results
 BoltzGen generated 60 binder designs, out of which 10 passed the internal filters. The top 3 designs based on its internal metrics are laid out in "Rank 1-3 TRCm.cif". The designs bound to the target are also laid out in "Rank 1-3 TRCm with target.cif".
-
+<img width="469" height="540" alt="Bildschirmfoto 2026-10-20 um 23 46 20" src="https://github.com/user-attachments/assets/a1cc064d-25c0-4d49-ae3a-9e9a0473b4d0" />
+<img width="492" height="568" alt="Bildschirmfoto 2026-10-20 um 23 43 15" src="https://github.com/user-attachments/assets/27247872-a242-4c75-80bf-ef3704a6f3a7" />
+<img width="463" height="582" alt="Bildschirmfoto 2026-10-20 um 23 39 21" src="https://github.com/user-attachments/assets/4dc9ade3-7d17-4414-87e2-76da265a79ba" />
 # Analysis
 
 # Ethical Considerations
@@ -34,7 +36,8 @@ Paper: Stark et al., BoltzGen: Toward Universal Binder Design (2025).
 
 License: The BoltzGen source code is distributed under the MIT License. See the original repository for its license and applicable notices.
 
-The project-specific contribution consists of the target selection, configuration, execution, and analysis documented here. The underlying BoltzGen software and its design methodology are credited to their original authors.
+
+The projecT specific contribution consists of the target selection, configuration, execution, and analysis documented here. The underlying BoltzGen software and its design methodology are credited to their original authors.
 
 Repo: https://github.com/HannesStark/boltzgen/tree/main
 
