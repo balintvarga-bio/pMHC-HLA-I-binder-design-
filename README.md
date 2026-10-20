@@ -33,9 +33,13 @@ BoltzGen generated 60 binder designs, out of which 10 passed the internal filter
     </td>
   </tr>
 </table>
+
 # Analysis
+The binders rank 1 and 3 have very similar helical shapes to the ones designed in the RFDiffusion paper.[4] Rank 2 has a very different design which may be interesting to investigate. The binding capabilities would need to be validated in actual experiments, but the results metrics are listed in "Results overview TRCm.pdf". Further validation of results might follow.
+
 
 # Ethical Considerations
+The distance between the user of a machine learning algorithm and the data center that processes it, may blind one to the amount of resources being spent on these computations. If one looks into the actual locations of these data centers, often in the US, one can find them very close to residential areas. The kaggle notebooks may allegedly run on the Google data center in Council Bluffs, Iowa, which is considered one of the "thirstiest" data centers in the world. Even if we assume, extremely generously, that 1% of the compute used on such computational biology tasks, including course work, hackathons, hobby coding and genuine research, may at all be useful at advancing medicine, do not the rights of those residents near data centers to clean water have premier consideration? Is keeping their water clean and accessible not a larger service to public health, than any computational biology task? Please consider this next time you run GPUs for hours, as I certainly will. Advance towards the health of tomorrow can't come at the expense of the health of today.
 
 # Sources and Licenses
 ## [1] BoltzGen
