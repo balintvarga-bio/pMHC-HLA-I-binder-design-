@@ -17,9 +17,8 @@ The script for using BoltzGen's binder design on this target is laid out in "bol
 
 # Results
 BoltzGen generated 60 binder designs, out of which 10 passed the internal filters. The top 3 designs based on its internal metrics are laid out in "Rank 1-3 TRCm.cif". The designs bound to the target are also laid out in "Rank 1-3 TRCm with target.cif".
-<img width="469" height="540" alt="Bildschirmfoto 2026-10-20 um 23 46 20" src="https://github.com/user-attachments/assets/a1cc064d-25c0-4d49-ae3a-9e9a0473b4d0" />
-<img width="492" height="568" alt="Bildschirmfoto 2026-10-20 um 23 43 15" src="https://github.com/user-attachments/assets/27247872-a242-4c75-80bf-ef3704a6f3a7" />
-<img width="463" height="582" alt="Bildschirmfoto 2026-10-20 um 23 39 21" src="https://github.com/user-attachments/assets/4dc9ade3-7d17-4414-87e2-76da265a79ba" />
+![Rank 1 design](images/Rank 1 design.png)
+
 # Analysis
 
 # Ethical Considerations
