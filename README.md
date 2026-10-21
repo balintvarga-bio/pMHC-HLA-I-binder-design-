@@ -54,7 +54,7 @@ Paper: Stark et al., BoltzGen: Toward Universal Binder Design (2025).
 License: The BoltzGen source code is distributed under the MIT License. See the original repository for its license and applicable notices.
 
 
-The projecT specific contribution consists of the target selection, configuration, execution, and analysis documented here. The underlying BoltzGen software and its design methodology are credited to their original authors.
+The project specific contribution consists of the target selection, configuration, execution, and analysis documented here. The underlying BoltzGen software and its design methodology are credited to their original authors.
 
 Repo: https://github.com/HannesStark/boltzgen/tree/main
 
