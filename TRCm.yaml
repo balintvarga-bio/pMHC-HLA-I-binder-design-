@@ -1,0 +1,39 @@
+entities:
+  # Specification of the target which is extracted from a .cif file
+  - file:
+      path: pMHC target.cif # .pdb files also work
+      
+      # The target includes chain A besides what is presumed to be membrane-bound, the tumor peptide (C) and the beta-2-microglobulin (B)
+
+      include: 
+        - chain:
+            id: A
+            res_index: 1..180 # residues between 1 and 180 (181-274 appear to be membrane-bound)
+        - chain:
+            id: B
+        - chain:
+            id: C
+
+      # The designed protein can bind to any region on the chain A but not the beta-2-microglobulin.
+      # The designed protein should use the bulge P4-Met and P5-Trp aswell as the P7-Thr and P8-Gln as these are the most exposed in the cleft.
+      binding_types:
+        - chain:
+            id: A
+            binding: "all"
+        - chain:
+            id: B
+            not_binding: "all" 
+        - chain:
+            id: C
+            binding: 4,5,7,8 
+
+
+
+
+
+  # Specify a designed protein chain 
+  # The constant region of human TCR is 141 residues, this should have a similar length
+  - protein: 
+      id: T
+      sequence: 80..141
+  
