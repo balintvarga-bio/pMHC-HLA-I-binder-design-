@@ -37,7 +37,7 @@ BoltzGen generated 60 binder designs, out of which 10 passed the internal filter
 # Analysis
 The binders rank 1 and 3 have very similar helical shapes to the ones designed in the RFDiffusion paper.[4] Rank 2 has a very different design which may be interesting to investigate. The binding capabilities would need to be validated in actual experiments, but the results metrics are listed in "Results overview TRCm.pdf". 
 
-A main issue with TCRm development is that generated TCRms may be less specific to the peptides presented by the MHCs, than the native TCR. This is especially difficult, because ideally TCRms need to be specific enough to not bind to healthy cells, but also have better binding than TCRs, in order to have the intended therapeutic effect. Literature suggests that TCRms may utilize hotspots on the MHC rather than the peptide (unlike TCRs) which leads to lower binding specificity for the TCRms. [6]
+A main issue with TCRm development is that generated TCRms may be less specific to the peptides presented by the MHCs, than the native TCR. This is especially difficult, because ideally TCRms need to be specific enough to not bind to healthy cells, but also have better binding than TCRs, in order to have the intended therapeutic effect. Literature suggests that TCRms may often utilize hotspots on the MHC rather than the peptide (unlike TCRs) which leads to lower binding specificity for the TCRms. [6] To test the specificity of the top 3 binders, the BoltzGen analysis function of the chains was run against the (HLA-A2.1)/BETA 2-MICROGLOBULIN/PEPTIDE P1049 - complex. This is the same MHC as our design target, but with a different nonamer (9 AA peptide) that comes from the EMC7 protein that is not associated with any cancer cells. [7][8]
 
 
 # Ethical Considerations
@@ -73,3 +73,7 @@ Repo: https://github.com/HannesStark/boltzgen/tree/main
 [6] Raybould, M. I. J., Nissley, D. A., Kumar, S., & Deane, C. M. (2023). Computationally profiling peptide:MHC recognition by T-cell receptors and T-cell receptor-mimetic antibodies. Frontiers in Immunology, 13, 1080596. https://doi.org/10.3389/fimmu.2022.1080596
 PDB ID: pdb_00001s9w
 
+[7] 1B0G — HLA-A2.1/β2-microglobulin/peptide P1049 (ALWGFFPVL) complex. https://www.rcsb.org/structure/1B0G
+
+[8] The Human Protein Atlas - EMC7 protein expression summary
+https://www.proteinatlas.org/ENSG00000134153-EMC7
