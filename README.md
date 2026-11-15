@@ -37,7 +37,7 @@ BoltzGen generated 60 binder designs, out of which 10 passed the internal filter
 # Analysis
 The binders rank 1 and 3 have very similar helical shapes to the ones designed in the RFDiffusion paper.[4] Rank 2 has a very different design which may be interesting to investigate. The binding capabilities would need to be validated in actual experiments, but the results metrics are listed in "Results overview TRCm.pdf". 
 
-A main issue with TCRm development is that generated TCRms may be less specific to the peptides presented by the MHCs, than the native TCR. This is especially difficult, because ideally TCRms need to be specific enough to not bind to healthy cells, but also have better binding than TCRs, in order to have the intended therapeutic effect. Literature suggests that TCRms may utilize hotspots on the MHC rather than the peptide (unlike TCRs) which leads to lower binding specificity for the TCRms. In order to test this, the designed binders were tested using BoltzGen's affinity prediction function against the healthy pMHC.
+A main issue with TCRm development is that generated TCRms may be less specific to the peptides presented by the MHCs, than the native TCR. This is especially difficult, because ideally TCRms need to be specific enough to not bind to healthy cells, but also have better binding than TCRs, in order to have the intended therapeutic effect. Literature suggests that TCRms may utilize hotspots on the MHC rather than the peptide (unlike TCRs) which leads to lower binding specificity for the TCRms. [6]
 
 
 # Ethical Considerations
@@ -70,5 +70,6 @@ Repo: https://github.com/HannesStark/boltzgen/tree/main
 
 [5] Webb, A. I., Dunstone, M. A., Chen, W., Aguilar, M. I., Chen, Q., Jackson, H., Chang, L., Kjer-Nielsen, L., Beddoe, T., McCluskey, J., Rossjohn, J., & Purcell, A. W. (2004). Functional and structural characteristics of NY-ESO-1-related HLA A2-restricted epitopes and the design of a novel immunogenic analogue. Journal of Biological Chemistry, 279(22), 23438–23446. https://doi.org/10.1074/jbc.M314066200
 
+[6] Raybould, M. I. J., Nissley, D. A., Kumar, S., & Deane, C. M. (2023). Computationally profiling peptide:MHC recognition by T-cell receptors and T-cell receptor-mimetic antibodies. Frontiers in Immunology, 13, 1080596. https://doi.org/10.3389/fimmu.2022.1080596
 PDB ID: pdb_00001s9w
 
